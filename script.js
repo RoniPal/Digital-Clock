@@ -59,7 +59,7 @@ let date = document.getElementById("date")
 let day_array = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 let month_array = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-//clock_box.style.display = "none"
+clock_box.style.display = "none"
 
 function add_zero(val){
     if(val < 10){
@@ -69,7 +69,7 @@ function add_zero(val){
 }
 
 setInterval(()=>{
-   // clock_box.style.display = "flex"
+    clock_box.style.display = "flex"
     let date_get = new Date()
     let hours_digit = date_get.getHours()
     let minutes_digit = date_get.getMinutes()
